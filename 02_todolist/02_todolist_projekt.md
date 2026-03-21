@@ -1,27 +1,18 @@
-# To-Do List Projekt
+ Popis
 
-## Popis a cíl projektu
-Program je jednoduchý úkolníček v Pythonu.  
-Uživatel si může zapisovat své úkoly, prohlížet je a mazat.  
-Cílem projektu je naučit se pracovat s funkcemi, seznamy a cykly v Pythonu, a zároveň vytvořit interaktivní program vhodný pro každodenní použití.
+Program pro správu úkolů v Pythonu.
+Uživatel může přidávat úkoly, zobrazovat je, mazat a označovat jako splněné.
 
-## Funkcionalita programu
-- Přidání nového úkolu do seznamu
-- Zobrazení aktuálních úkolů
-- Smazání vybraného úkolu
-- Menu pro snadnou navigaci
-- Ošetření chybového zadání (např. špatné číslo při mazání)
-
-## Technická část
-- Použité knihovny: pouze standardní Python (`input`, `print`, `list`)
-- Algoritmy: jednoduchá iterace přes seznamy, výběr podle indexu
-- Struktura programu:
-    - Funkce `zobraz_ukoly(ukoly)` – vypíše seznam úkolů
-    - Funkce `main()` – hlavní smyčka programu s menu
-- Program běží v konzoli (žádné GUI)
-
-## Uživatelský návod
-1. Spusť soubor `todo.py` v Pythonu 3.x  
-2. Zobrazí se menu s možnostmi: přidat úkol, zobrazit úkoly, smazat úkol, konec  
-3. Postupně zadávej volby podle potřeby  
-4. Program se ukončí po výběru “Konec”
+ Menu programu
+1 – Přidat úkol → zadáš nový úkol, uloží se
+2 – Zobrazit úkoly → vypíše všechny úkoly se stavem (splněno/nesplněno)
+3 – Smazat úkol → odstraní vybraný úkol
+4 – Označit jako splněný → změní stav úkolu na splněný
+5 – Konec → ukončí program
+ Funkce
+zobraz_ukoly(ukoly) – vypíše seznam úkolů s jejich stavem
+main() – hlavní funkce programu, obsahuje menu a logiku
+ Vlastnosti
+úkoly jsou slovníky ({"text": ..., "hotovo": ...})
+jednoduché ošetření špatného vstupu
+běží v terminálu
