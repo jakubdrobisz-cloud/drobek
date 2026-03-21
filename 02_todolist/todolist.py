@@ -41,6 +41,4 @@ def main():
             break
 
         else:
-            print(" Neplatná volba")
-
-main()
+            print(" Neplatná
