@@ -1,3 +1,4 @@
+#seznam pro ukládání úkolů 
 def zobraz_ukoly(ukoly):
     if not ukoly:
         print(" Žádné úkoly")
