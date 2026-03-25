@@ -42,7 +42,6 @@ def smaz_heslo():
             print("Neplatné číslo.")
     except ValueError:
         print("Zadej platné číslo.")
->>>>>>> 8b59757 (Přidána funkce pro mazání uložených hesel)
 
 def main():
     while True:
