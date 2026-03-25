@@ -9,21 +9,23 @@ Cílem je vytvořit jednoduchou, ale funkční aplikaci pro správu hesel.
 - Přidání nového hesla s názvem služby, uživatelským jménem a heslem
 - Uložení hesel do souboru `hesla.txt`
 - Zobrazení všech uložených hesel
+- Smazání vybraného hesla
 - Jednoduché menu pro ovládání programu
 
 ## Technická část
 - Použité knihovny: pouze standardní Python (žádné externí knihovny)
 - Použité datové struktury: seznamy nejsou potřeba, data se ukládají přímo do souboru
-- Funkce (`def`) pro jednotlivé akce: přidání hesla, zobrazení hesel, hlavní smyčka programu
+- Funkce (`def`) pro jednotlivé akce: přidání hesla, zobrazení hesel, smazání hesla, hlavní smyčka programu
 - Práce se soubory: `open`, `write`, `read`, `readlines`
 - Řídící struktury: cyklus `while` pro menu, podmínky `if/elif/else` pro volby uživatele
 - Ošetření výjimek: kontrola existence souboru při načítání hesel (`FileNotFoundError`)
 
 ## Uživatelská instrukce
-1. Spusť program `password_manager.py` ve svém Python prostředí.
+1. Spusť program `spravce_hesel.py` ve svém Python prostředí.
 2. Vyber možnost z menu:
    - `1` – přidat nové heslo
    - `2` – zobrazit uložená hesla
-   - `3` – ukončit program
+   - `3` – smazat heslo
+   - `4` – ukončit program
 3. Při přidávání hesla zadej název služby, uživatelské jméno a heslo.
 4. Uložená hesla se budou nacházet v souboru `hesla.txt`.

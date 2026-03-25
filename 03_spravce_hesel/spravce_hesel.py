@@ -19,17 +19,38 @@ def zobraz_hesla():
                 print("Žádná uložená hesla.")
             else:
                 print("\n--- ULOŽENÁ HESLA ---")
-                for radek in data:
-                    print(radek.strip())
+                for i, radek in enumerate(data, 1):
+                    print(f"{i}. {radek.strip()}")
+                return data  # Vrátí data pro smazání
     except FileNotFoundError:
         print("Soubor zatím neexistuje.")
+        return []
+
+def smaz_heslo():
+    data = zobraz_hesla()
+    if not data:
+        return
+
+    try:
+        cislo = int(input("Zadej číslo hesla ke smazání: "))
+        if 1 <= cislo <= len(data):
+            del data[cislo - 1]
+            with open("hesla.txt", "w") as soubor:
+                soubor.writelines(data)
+            print("Heslo smazáno!")
+        else:
+            print("Neplatné číslo.")
+    except ValueError:
+        print("Zadej platné číslo.")
+>>>>>>> 8b59757 (Přidána funkce pro mazání uložených hesel)
 
 def main():
     while True:
         print("\n--- SPRÁVCE HESEL ---")
         print("1 - Přidat heslo")
         print("2 - Zobrazit hesla")
-        print("3 - Konec")
+        print("3 - Smazat heslo")
+        print("4 - Konec")
 
         volba = input("Vyber: ")
 
@@ -40,6 +61,9 @@ def main():
             zobraz_hesla()
 
         elif volba == "3":
+            smaz_heslo()
+
+        elif volba == "4":
             print("Konec programu")
             break
 
