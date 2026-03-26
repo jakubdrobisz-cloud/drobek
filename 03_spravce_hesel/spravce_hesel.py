@@ -1,9 +1,11 @@
 # jednoduchý správce hesel
 
+import getpass
+
 def uloz_heslo():
     nazev = input("Název (např. Instagram): ")
     jmeno = input("Uživatelské jméno: ")
-    heslo = input("Heslo: ")
+    heslo = getpass.getpass("Heslo: ")  # tady se heslo nezobrazuje
 
     with open("hesla.txt", "a") as soubor:
         soubor.write(f"{nazev} | {jmeno} | {heslo}\n")
