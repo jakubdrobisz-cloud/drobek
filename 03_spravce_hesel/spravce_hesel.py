@@ -1,4 +1,6 @@
-# jednoduchý správce hesel
+jednoduchý správce hesel
+
+import getpass
 
 import getpass
 
