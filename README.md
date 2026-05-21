@@ -8,3 +8,4 @@ Moje projekty v pythonu
 │5│ šachy │ 29.4.2026│
 │6│ pexeso │ 4.5.2026│
 │7│ kviz │ 14.5.2026│
+│8│ black jack │ 21.5.2026│
